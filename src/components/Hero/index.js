@@ -17,10 +17,10 @@ const Hero = () => {
             <HeroContent>
                 <HeroItems>
                     <HeroH1>
-                        fruizzy for everyone
+                        tasty healthy <span>fruizzy</span>
                     </HeroH1>
                     <HeroP>
-                        all homemades!
+                        no chemical uses
                     </HeroP>
                     <HeroBtn>
                         Place Order
