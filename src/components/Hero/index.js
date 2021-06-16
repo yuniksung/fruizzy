@@ -20,7 +20,7 @@ const Hero = () => {
                         tasty healthy <span>fruizzy</span>
                     </HeroH1>
                     <HeroP>
-                        no chemical uses
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     </HeroP>
                     <HeroBtn>
                         Place Order

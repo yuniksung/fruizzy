@@ -4,8 +4,8 @@ export const ProductsContainer = styled.div`
   /* width: 100vw; */
   min-height: 100vh;
   padding: 5rem calc((100vw - 1300px) / 2);
-  background: rgb(148, 199, 148);
-  color: #fff;
+  background: rgb(255,250,240);
+  color: #000;
 `;
 
 export const ProductWrapper = styled.div`
@@ -26,6 +26,11 @@ export const ProductImg = styled.img`
   min-width: 300px;
   max-width: 100%;
   box-shadow: 8px 8px #fdc500;
+  transition: 0.2s ease-out;
+
+  &:hover{
+    box-shadow: 8px 8px rgb(255, 223, 109);
+  }
 `;
 
 export const ProductsHeading = styled.h1`
