@@ -8,16 +8,25 @@ import {
     ProductInfo, 
     ProductTitle, 
     ProductDesc, 
+    ProducGood,
     ProductPrice, 
     ProductButton, 
-    CardFooter
+    CardFooter,
+    ProductP
 } from './ProductsElements'
 
 
 const Products = ({ heading, data }) => {
+
+
+    const onClick = () => {
+        // console.log("clicked")
+    }
+
     return (
         <ProductsContainer>
-            <ProductsHeading>Menu</ProductsHeading>
+            <ProductsHeading>Products</ProductsHeading>
+            <ProductP>*We start making a Fruizzy after we receive your order</ProductP>
             <ProductWrapper>
                 {data.map((product, index) => {
                     return (
@@ -26,9 +35,12 @@ const Products = ({ heading, data }) => {
                         <ProductInfo>
                             <ProductTitle>{product.name}</ProductTitle>
                             <ProductDesc>{product.description}</ProductDesc>
+                            <ProducGood>{product.goodfor}</ProducGood>
+                            <ProductPrice>{product.price}</ProductPrice>
                             <CardFooter>
-                                <ProductPrice>{product.price}</ProductPrice>
-                                <ProductButton><i class="fas fa-cart-plus"></i></ProductButton>
+                                <ProductButton 
+                                onClick={onClick}                                
+                                >Add to Cart</ProductButton>
                             </CardFooter>
 
                         </ProductInfo>

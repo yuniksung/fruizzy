@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const ProductsContainer = styled.div`
   /* width: 100vw; */
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  padding: 5rem calc((90vw - 1300px) / 2);
   background: rgb(255,250,240);
   color: #000;
+  padding-top: 150px;
 `;
 
 export const ProductWrapper = styled.div`
@@ -22,6 +23,10 @@ export const ProductCard = styled.div`
   background-color: white;
   border: 1px solid lightgray;
   margin-bottom: 50px;
+
+  :hover{
+    border: 1px solid gray;
+  }
 `;
 
 export const ProductsHeading = styled.h1`
@@ -30,11 +35,18 @@ export const ProductsHeading = styled.h1`
   margin-bottom: 5rem;
 `;
 
+export const ProductP = styled.p`
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 5px;
+`
+
 export const ProductImg = styled.img`
-  height: 300px;
-  min-width: 300px;
+  height: 250px;
+  min-width: 298px;
   max-width: 100%;
-  border: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 
 `;
 
@@ -59,8 +71,12 @@ export const ProductDesc = styled.p`
   letter-spacing: 0.8px;
 `;
 
-export const CardFooter = styled.div`
-  display: flex;
+export const ProducGood = styled.p`
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+  color: gray;
+  font-style: italic;
+  text-transform: capitalize;
 `
 
 export const ProductPrice = styled.p`
@@ -68,18 +84,27 @@ export const ProductPrice = styled.p`
   font-size: 1.5rem;
 `;
 
-export const ProductButton = styled.button`
+// Card footer
+export const CardFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+
+`
+
+
+export const ProductButton = styled.a`
   font-size: 1rem;
-  padding: 0.5rem 2rem;
-  border: none;
-  background: #e31837;
-  color: #fff;
-  transition: 0.2 ease-out;
-  &:hover {
-    background: #ffc500;
-    transition: 0.2s ease-out;
-    cursor: pointer;
-    color: #000;
+  padding: 0 10px;
+  background-color: #FEDF1B;
+  border-radius: 15px;
+  border: 1px solid gray;
+  text-decoration: none;
+  color: black;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+
+  :hover{
+    background-color: #d1b500
   }
 `;
 

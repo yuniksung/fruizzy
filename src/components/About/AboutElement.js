@@ -6,13 +6,14 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 200px;
+    padding: 100px 200px;
     background-color: #f1f1f1;
 `
 
 export const AboutHeading = styled.h1`
     letter-spacing: 2px;
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    margin-bottom: 1rem;
 
     span{
         color: rgb(240, 128, 165);
@@ -23,6 +24,14 @@ export const AboutHeading = styled.h1`
 
 export const AboutText = styled.p`
     letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+
+    span{
+        color: rgb(255, 100, 150);
+        text-transform: uppercase;
+    }
 `
 
 export const ImgContainer = styled.div`

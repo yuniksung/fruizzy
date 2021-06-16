@@ -5,16 +5,9 @@ import {
     AboutContainer, 
     AboutHeading, 
     AboutText, 
-    ImgContainer, 
-    SampleImg 
 } from './AboutElement';
 
-// SampleImg
-import strawChung from '../../images/straw-chung.jpg'
-import limeChung from '../../images/lime-chung.png'
-import watermelonChung from '../../images/watermelon-chung.jpg'
-import lemonChung from '../../images/lemon-chung.jpg'
-import somethingChung from '../../images/something-chung.jpg'
+
 
 const About = () => {
     return (
@@ -23,16 +16,9 @@ const About = () => {
                 About <span>Fruizzy</span>
             </AboutHeading>
             <AboutText>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem commodi ratione illo dicta non deserunt possimus id, beatae facere sapiente voluptatum inventore facilis nulla voluptates at sequi quos dolores nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem commodi ratione illo dicta non deserunt possimus id, beatae facere sapiente voluptatum inventore facilis nulla voluptates at sequi quos dolores nihil!
+                One of the most popular beverages in Korea is <span>'Cheong'</span>, regardless of age. However, since there was no such thing as Cheong in the United States, he often made and enjoyed Cheong at home. When he lost a job due to Covid19, he decided to sell cheong at the farmer's market. He changed the name cheong to <span>Fruizzy</span> and he starts a journey.
             </AboutText>
             {/* 5 pictures of the products */}
-            <ImgContainer>
-                <SampleImg src={strawChung} alt="sample image"/>
-                <SampleImg src={limeChung} alt="sample image"/>
-                <SampleImg src={watermelonChung} alt="sample image"/>
-                <SampleImg src={lemonChung} alt="sample image"/>
-                <SampleImg src={somethingChung} alt="sample image"/>
-            </ImgContainer>
         </AboutContainer>
     )
 }
