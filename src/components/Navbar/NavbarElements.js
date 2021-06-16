@@ -5,6 +5,8 @@ import { VscMenu } from "react-icons/vsc";
 export const Nav = styled.nav`
   background: transparent;
   height: 80px;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -20,10 +22,19 @@ export const NavLink = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  margin: 0 20px;
   @media screen and (max-width: 400px) {
     position: absolute;
     top: 10px;
     left: 25px;
+  }
+
+  :nth-child(3){
+    font-size: 3rem;
+    text-stroke: 5px red;
+    color: yellow;
+    text-shadow: 4px 4px hotpink;
+
   }
 `;
 

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/hero-chung-2.jpg'
+import ImgBg from '../../images/hero-chung-1.jpg'
 
 export const HeroContainer = styled.div`
     background:url(${ImgBg});
     height: 100vh;
-    background-position: center;
-    background-size: cover;
+    background-position: left center;
+    background-size: 100%;
 ` 
 
 export const HeroContent = styled.div`
