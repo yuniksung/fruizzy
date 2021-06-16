@@ -19,18 +19,9 @@ export const ProductCard = styled.div`
   margin: 0 2rem;
   line-height: 2;
   width: 300px;
-`;
-
-export const ProductImg = styled.img`
-  height: 300px;
-  min-width: 300px;
-  max-width: 100%;
-  box-shadow: 8px 8px #fdc500;
-  transition: 0.2s ease-out;
-
-  &:hover{
-    box-shadow: 8px 8px rgb(255, 223, 109);
-  }
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 50px;
 `;
 
 export const ProductsHeading = styled.h1`
@@ -39,9 +30,12 @@ export const ProductsHeading = styled.h1`
   margin-bottom: 5rem;
 `;
 
-export const ProductTitle = styled.h2`
-  font-weight: 400;
-  font-size: 1.5rem;
+export const ProductImg = styled.img`
+  height: 300px;
+  min-width: 300px;
+  max-width: 100%;
+  border: 1px solid gray;
+
 `;
 
 export const ProductInfo = styled.div`
@@ -49,22 +43,34 @@ export const ProductInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
+  margin-bottom: 2rem;
+`;
+
+export const ProductTitle = styled.h2`
+  font-weight: 400;
+  font-size: 1.5rem;
 `;
 
 export const ProductDesc = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
 `;
 
+export const CardFooter = styled.div`
+  display: flex;
+`
+
 export const ProductPrice = styled.p`
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 `;
 
 export const ProductButton = styled.button`
   font-size: 1rem;
-  padding: 1rem 4rem;
+  padding: 0.5rem 2rem;
   border: none;
   background: #e31837;
   color: #fff;
@@ -76,3 +82,4 @@ export const ProductButton = styled.button`
     color: #000;
   }
 `;
+

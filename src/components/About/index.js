@@ -1,4 +1,6 @@
 import React from 'react'
+
+// Style-components
 import { 
     AboutContainer, 
     AboutHeading, 
@@ -7,6 +9,7 @@ import {
     SampleImg 
 } from './AboutElement';
 
+// SampleImg
 import strawChung from '../../images/straw-chung.jpg'
 import limeChung from '../../images/lime-chung.png'
 import watermelonChung from '../../images/watermelon-chung.jpg'

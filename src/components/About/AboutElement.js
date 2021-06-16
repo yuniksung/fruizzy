@@ -12,11 +12,11 @@ export const AboutContainer = styled.div`
 
 export const AboutHeading = styled.h1`
     letter-spacing: 2px;
+    font-size: clamp(1rem, 5vw, 3rem);
 
     span{
         color: rgb(240, 128, 165);
         text-transform: uppercase;
-
     }
     
 `
@@ -37,6 +37,11 @@ export const SampleImg = styled.img`
     height: 250px;
     border: 1px solid gray;
     transition: 0.2s ease-out;
+
+    @media screen and (max-width: 700px) {
+        width: 100px;
+        height: 150px;
+      }
 
     :hover{
         box-shadow: 1px 2px gray;
