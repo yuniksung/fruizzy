@@ -3,7 +3,7 @@ import ImgBg from '../../images/hero-chung-1.jpg'
 
 export const HeroContainer = styled.div`
     background:url(${ImgBg});
-    height: 100vh;
+    height: 800px;
     background-position: left center;
     background-size: 100%;
 ` 

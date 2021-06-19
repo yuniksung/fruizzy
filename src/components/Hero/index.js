@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Navbar from '../Navbar/index'
-import Sidebar from '../Sidebar'
 
 // Style-components
 import { 
@@ -8,29 +7,19 @@ import {
     HeroContent, 
     HeroItems, 
     HeroH1, 
-    HeroP, 
     HeroBtn 
 } from './HeroElements'
 
 const Hero = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
 
     return (
         <HeroContainer>
-            <Navbar toggle={toggle}/>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
+            <Navbar />
             <HeroContent>
                 <HeroItems>
                     <HeroH1>
                         tasty healthy <span>fruizzy</span>
                     </HeroH1>
-                    <HeroP>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    </HeroP>
                     <HeroBtn>
                         Place Order
                     </HeroBtn>

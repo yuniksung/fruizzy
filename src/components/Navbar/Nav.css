@@ -1,0 +1,21 @@
+.navbar.active{
+    background-color: #F1F1F1;
+    height: 80px;
+    transition: 0.3s ease;
+    padding: 0px 10px;
+}
+
+.navbar{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+  
+  
+  
+  

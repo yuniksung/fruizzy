@@ -1,17 +1,33 @@
-import React from 'react'
-import { Nav, NavLink} from './NavbarElements'
+import React, { useState } from 'react'
+import './Nav.css'
+import { NavLink} from './NavbarElements'
 
-const Navbar = ({toggle}) => {
+const Navbar = (props) => {
+    const [navbar, setNavbar] = useState(false);
+
+
+    const changeBg = () => {
+        if(window.scrollY >= 80) {
+            setNavbar(true) 
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBg);
+
     return (
         <>
-           <Nav>
+           <div className={
+               navbar ? 'navbar active' : 'navbar'
+           }>
             <NavLink to ='/'>About</NavLink>
             <NavLink to ='/'>Product</NavLink>
             <NavLink to ='/'>Fruizzy</NavLink>
             <NavLink to ='/'>Cart</NavLink>
             <NavLink to ='/'>Contact</NavLink>
 
-           </Nav>
+           </div>
         </>
     )
 }

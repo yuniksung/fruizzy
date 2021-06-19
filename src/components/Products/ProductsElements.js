@@ -91,6 +91,39 @@ export const CardFooter = styled.div`
 
 `
 
+export const AddOrDelete = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+`
+
+export const AddDeleteBtn = styled.button`
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+
+  :Active{
+    color: red;
+  }
+`
+
+export const CountText = styled.p`
+padding: 0 20px;
+
+`
+
+export const ResetBtn = styled.button `
+background-color: transparent;
+font-weight: 500;
+cursor: pointer;
+
+:Active{
+  color: red;
+}
+`
+
+
 
 export const ProductButton = styled.a`
   font-size: 1rem;
@@ -107,4 +140,6 @@ export const ProductButton = styled.a`
     background-color: #d1b500
   }
 `;
+
+
 

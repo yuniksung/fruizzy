@@ -12,15 +12,14 @@ import {
     ProductPrice, 
     ProductButton, 
     CardFooter,
-    ProductP
+    ProductP,
 } from './ProductsElements'
 
 
-const Products = ({ heading, data }) => {
+const Products = ({ data }) => {
 
-
-    const onClick = () => {
-        // console.log("clicked")
+    const onAdd = () => {
+        console.log(onAdd);
     }
 
     return (
@@ -37,10 +36,10 @@ const Products = ({ heading, data }) => {
                             <ProductDesc>{product.description}</ProductDesc>
                             <ProducGood>{product.goodfor}</ProducGood>
                             <ProductPrice>{product.price}</ProductPrice>
-                            <CardFooter>
+                            <CardFooter>                                
                                 <ProductButton 
-                                onClick={onClick}                                
-                                >Add to Cart</ProductButton>
+                                onClick={() => onAdd()}>          
+                                Add to Cart</ProductButton>
                             </CardFooter>
 
                         </ProductInfo>
