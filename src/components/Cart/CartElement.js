@@ -26,3 +26,18 @@ export const CartHeader = styled.h1`
 export const CartBox = styled.div`
 
 `
+export const CartItems = styled.div`
+
+`
+
+export const ItemName = styled.h3`
+
+`
+
+export const AddBtn = styled.button`
+
+`
+
+export const RemoveBtn = styled.button`
+
+`

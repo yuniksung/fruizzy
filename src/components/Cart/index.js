@@ -5,11 +5,15 @@ import {
     CartContainer,
     CartContent,
     CartHeader,
-    CartBox
+    CartBox,
+    CartItems,
+    ItemName,
+    RemoveBtn,
+    AddBtn
 } from './CartElement'
 
 const Cart = (props) => {
-    const { cartItems } = props;
+    const { cartItems, onAdd, onRemove } = props;
 
     return ( 
         <CartContainer>
@@ -17,7 +21,15 @@ const Cart = (props) => {
                 <CartHeader>Cart Items</CartHeader>
                 <CartBox>
                     {cartItems.length === 0 && <p>Cart is Empty</p>}
+                    {cartItems.map((item) => (
+                        <CartItems key={item.id}>
+                            <ItemName>{item.name}</ItemName>
 
+                            <RemoveBtn onClick={()=> onRemove(item)}>-</RemoveBtn>
+                            <AddBtn onClick={()=> onAdd(item)}>+</AddBtn>
+                            
+                        </CartItems>
+                    ))}
                 </CartBox>
 
             </CartContent>
