@@ -16,18 +16,15 @@ import {
 } from './ProductsElements'
 
 
-const Products = ({ data }) => {
-
-    const onAdd = () => {
-        console.log(onAdd);
-    }
+const Products = (props) => {
+    const { products, onAdd } = props;
 
     return (
         <ProductsContainer>
             <ProductsHeading>Products</ProductsHeading>
             <ProductP>*We start making a Fruizzy after we receive your order</ProductP>
             <ProductWrapper>
-                {data.map((product, index) => {
+                {products.map((product, index) => {
                     return (
                     <ProductCard key={index}>
                         <ProductImg src={product.img} alt={product.alt} />
@@ -38,7 +35,7 @@ const Products = ({ data }) => {
                             <ProductPrice>{product.price}</ProductPrice>
                             <CardFooter>                                
                                 <ProductButton 
-                                onClick={() => onAdd()}>          
+                                onClick={() => onAdd(product)}>          
                                 Add to Cart</ProductButton>
                             </CardFooter>
 

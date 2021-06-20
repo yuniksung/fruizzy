@@ -1,4 +1,6 @@
 import React from 'react'
+// import Products from '../Products/index';
+
 import {
     CartContainer,
     CartContent,
@@ -6,13 +8,15 @@ import {
     CartBox
 } from './CartElement'
 
-const Cart = () => {
+const Cart = (props) => {
+    const { cartItems } = props;
+
     return ( 
         <CartContainer>
             <CartContent>
                 <CartHeader>Cart Items</CartHeader>
                 <CartBox>
-
+                    {cartItems.length === 0 && <p>Cart is Empty</p>}
 
                 </CartBox>
 
@@ -22,17 +26,3 @@ const Cart = () => {
 }
 
 export default Cart
-
-/* <AddOrDelete>
-<AddDeleteBtn 
-onClick={() => {
-    setQuantity(quantity + 1);
-}}
-><i class="fas fa-plus"></i></AddDeleteBtn>
-<CountText>{ quantity + 1}</CountText>
-<AddDeleteBtn
-onClick={() => {
-    setQuantity(quantity - 1);
-}}
-><i class="fas fa-minus"></i></AddDeleteBtn>
-</AddOrDelete> */
